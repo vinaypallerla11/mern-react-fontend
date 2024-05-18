@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
-function App() {
+import India from './components/India';
+import Bangladesh from './components/Bangladesh';
+import Japan from './components/Japan';
+import Ukrain from './components/Ukrain';
+import LoginForm from './LoginForm'
+import RegistrationForm from './RegistrationForm';
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<LoginForm />} />
+          <Route path='/india' element={<India />} />
+          <Route path='/bangladesh' element={<Bangladesh />} />
+          <Route path='/japan' element={<Japan />} />
+          <Route path='/ukrain' element={<Ukrain />} />
+          <Route path="/register" element={<RegistrationForm />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
