@@ -12,14 +12,13 @@ const RegistrationForm = () => {
   const userDetails = { username, password, email, city };
 
   const showAlert = () => {
-    alert('user created successfully');
+    alert('User created successfully');
   }
 
   const LoginForm = () => {
-    navigate('/');
+    navigate('/', { replace: true });
   }
 
-  
   const formSubmit = async (e) => {
     e.preventDefault();
     console.log(userDetails);
@@ -36,23 +35,26 @@ const RegistrationForm = () => {
     const data = await response.json();
     console.log(response);
     console.log(data);
-    alert("register successfull")
-
+    alert("Register successful");
   };
 
   return (
-    <div className="empForm">
+    <div className="registration-form-container">
       <div className="section">
-        <h1 className='head'>Register here...</h1>
+        <h1 className='heading'>Register Here...</h1>
         <form onSubmit={formSubmit} className='form-container'>
-          <label htmlFor="username" className="input-label">userame:</label> <br />
-          <input type="text" className="input-change" id="username" name='username' placeholder='username' onChange={(e) => setUserName(e.target.value)} /> <br />
-          <label htmlFor="password" className="input-label">password:</label> <br />
-          <input type="text" className="input-change" id="password" name='password' placeholder='password' onChange={(e) => setPassword(e.target.value)} /> <br />
-          <label htmlFor="email" className="input-label" >email:</label> <br />
-          <input type="text" className="input-change" id="email" name='email' placeholder='email' onChange={(e) => setEmail(e.target.value)} /> <br />
-          <label htmlFor="city" className="input-label">city:</label> <br />
-          <input type="text" className="input-change" id="city" name='city' placeholder='city' onChange={(e) => setCity(e.target.value)} /> <br />
+          <label htmlFor="username" className="input-label">Username:</label>
+          <input type="text" className="input-field" id="username" name='username' placeholder='Username' value={username} onChange={(e) => setUserName(e.target.value)} />
+
+          <label htmlFor="password" className="input-label">Password:</label>
+          <input type="password" className="input-field" id="password" name='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} />
+
+          <label htmlFor="email" className="input-label">Email:</label>
+          <input type="email" className="input-field" id="email" name='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+
+          <label htmlFor="city" className="input-label">City:</label>
+          <input type="text" className="input-field" id="city" name='city' placeholder='City' value={city} onChange={(e) => setCity(e.target.value)} />
+
           <div className='button-container'>
             <button type="submit" className="submit-button" onClick={showAlert}>Register</button>
             <button className="submit-button-login" onClick={LoginForm}>Login</button>

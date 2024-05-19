@@ -1,0 +1,45 @@
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    border: none;
+}
+
+
+h1{
+    align-items: center;
+}
+
+p{
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* @media screen and (max-width:480px){
+    .para{
+        width:100%;
+        margin:5px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:760px){
+    .para{
+        width: 100%;
+        margin:5px;
+    }
+}
+
+@media screen and (min-width:761px) and (max-width:1200px){
+    .para{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .product-card{
+        width: 100%;
+    }
+} */

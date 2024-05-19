@@ -1,116 +1,79 @@
-
-.empForm{
-    background-color: blueviolet;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height:95vh;
-    padding:50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for outer shading */
+.empForm {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
     padding: 20px;
-}
-
-.section{
-    padding-left:50px;
-    padding-right:50px;
-    padding-top:30px;
-    padding-bottom:40px;
-    background-color: bisque;
-    border-radius: 16px;
-}
-
-.button{
-    color:white;
-    background-color: blue;
-    border:0px;
-    padding: 10px;
-    margin-top:20px;
-    border-radius:6px;
-}
-
-.resetButton{
-    color:white;
-    background-color: red;
-    border:0px;
-    padding: 10px;
-    margin-top:20px;
-    border-radius:6px;
-}
-
-.button-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right:6px;
-}
-
-.form-container{
-    margin-right:10px;
-    box-shadow: 0 4px 8px hsla(0, 26%, 36%, 0.102); /* Box shadow for outer shading */
-    background-color: white;
-    padding:5px;
-    padding-right:-25px;
-    border-radius: 12px;
-}
-
-.head{
-    font-size: 20px;
-    padding:5px;
-    font-family: sans-serif;
+  }
+  
+  .section {
+    background-color: #f9f9f9;
+    padding: 40px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .head {
     text-align: center;
-    color:black;
+    margin-bottom: 30px; /* Increased margin bottom */
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 8px;
     font-weight: bold;
-}
-
-.submit-button {
-    font-family: 'Roboto';
-    font-size: 12px;
-    color: #ffffff;
-    padding: 8px 16px;
-    margin-top: 10px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 20px;
-    background-color: #ea580c;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .submit-button,
+  .create-button {
+    width: 100%;
+    padding: 12px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    outline: none;
-    margin-left:100px;
-    
-}
-
-.input-change{
-    padding:8px;
-}
-
-.input-label {
-    margin-right: 130px;
-    font-family: 'Sans-serif';
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    color: black;
-    text-align: start;
-    margin-bottom: 0px;;
-}
-
-.create-button{
-    background-color: green;
-    font-family: 'Roboto';
-    font-size: 14px;
-    color: #ffffff;
-    padding: 8px 16px;
-    margin-top: 20px;
-    margin-bottom: 2px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    margin-left: 50px;
-}
-
-.error-msg{
-    color:red;
     font-size: 16px;
-}
-
+    font-weight: bold;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .create-button {
+    margin-top: 20px; /* Increased margin top */
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .error-msg {
+    color: red;
+    margin-top: 20px; /* Increased margin top */
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .empForm {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .empForm {
+      max-width: 300px;
+    }
+  }
+  

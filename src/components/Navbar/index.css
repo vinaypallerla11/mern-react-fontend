@@ -1,0 +1,52 @@
+/* src/components/NavBar/NavBar.css */
+
+.containerSection {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .content-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .img-content {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-container ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-container ul li {
+    cursor: pointer;
+  }
+  
+  .nav-container ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .button-container2 {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  
