@@ -22,7 +22,7 @@ const RegistrationForm = () => {
   const formSubmit = async (e) => {
     e.preventDefault();
     console.log(userDetails);
-    const url = 'https://ecocart-02cv.onrender.com/registers/';
+    const url = 'https://ecocart-5.onrender.com/registers/';
     const options = {
       method: 'POST',
       headers: {
