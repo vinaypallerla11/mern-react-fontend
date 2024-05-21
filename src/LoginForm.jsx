@@ -28,7 +28,7 @@ const LoginForm = () => {
     e.preventDefault();
     const userDetails = { username, password };
     console.log(userDetails);
-    const url = 'http://localhost:5000/login/';
+    const url = 'https://ecocart-02cv.onrender.com/login/';
     const options = {
       method: 'POST',
       headers: {
